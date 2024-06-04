@@ -1,12 +1,11 @@
 {
-  "name": "css-structure_custom-properties",
+  "name": "css-structure_taco-truck",
   "version": "0.0.0-unreleased",
-  "description": "CSS Structure: Custom Properties",
+  "description": "Static HTML template with CSS",
   "main": "index.html",
   "nf": {
     "template": "html-css"
   },
-  "private": true,
   "scripts": {
     "start": "npx -y live-server@latest --port=3000"
   }
