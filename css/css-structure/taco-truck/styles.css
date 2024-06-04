@@ -3,9 +3,9 @@
 /* -------------------------------------------------------- */
 
 @import "./theme.css";
-@import "./header.css";
-@import "./main.css";
-@import "./card.css";
+@import "./components/header.css";
+@import "./components/main.css";
+@import "./components/card.css";
 
 /* ------------------------------------------------------------------------------ */
 /* You don't need to edit the code for the * universal selector and the body.
