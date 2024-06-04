@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  flex-direction: column;
 }
 
 .menu__header {
@@ -7,4 +8,16 @@
   color: white;
   padding: 10px 5px;
   align-self: flex-start;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 10px 20px;
+}
+
+.menu-list__item {
+  flex-basis: 40%;
 }
