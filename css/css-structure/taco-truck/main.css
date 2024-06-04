@@ -1,0 +1,10 @@
+.menu {
+  display: flex;
+}
+
+.menu__header {
+  background-color: purple;
+  color: white;
+  padding: 10px 5px;
+  align-self: flex-start;
+}
