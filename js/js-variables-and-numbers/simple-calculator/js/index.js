@@ -6,7 +6,7 @@ const operand2 = 4;
 
 // Just to test for first operation
 let result = 0;
-console.log(result);
+// console.log(result);
 
 /*
 Mathematical operations
