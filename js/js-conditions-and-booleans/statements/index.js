@@ -40,11 +40,11 @@ let price = 0;
 if (numberOfHotdogs < 5) {
   console.log(numberOfHotdogs * 2);
 } else if (numberOfHotdogs >= 5 && numberOfHotdogs < 100) {
-  console.log(numberOfHotdogs & 1.5);
+  console.log(numberOfHotdogs * 1.5);
 } else if (numberOfHotdogs >= 100 && numberOfHotdogs < 1000000) {
-  console.log(numberOfHotdogs & 1);
+  console.log(numberOfHotdogs * 1);
 } else if (numberOfHotdogs >= 1000000) {
-  console.log(numberOfHotdogs & 0.1);
+  console.log(numberOfHotdogs * 0.1);
 }
 
 // Part 4: Daytime
