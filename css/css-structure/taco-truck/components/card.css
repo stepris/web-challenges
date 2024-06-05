@@ -1,0 +1,8 @@
+.card {
+  /* background-color: rgb(46, 179, 46); */
+  /* color: rgb(245, 224, 224); */
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  padding: 10px;
+  border-radius: 15px;
+}
