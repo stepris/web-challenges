@@ -26,7 +26,7 @@ const number = 6;
 
 const isEvenNumberMsg = "even number";
 
-if (number % 2 == 0) {
+if (number % 2 === 0) {
   console.log(isEvenNumberMsg);
 } else {
   console.log("odd number");
