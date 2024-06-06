@@ -59,11 +59,28 @@ statement = currentHour < 17 ? needToLearnMsg : happyMsg;
 console.log(statement);
 
 // Part 5: Greeting
-const userName = "Archibald";
+
+/* const userName = "Archibald";
+
+const greeting = "Hello " + "//enter your code here" + "!";
+
+console.log(greeting); */
+
+// My first solution
+
+/* const userName = "Archibald";
 
 const coachName = "Roland";
 
 const greeting =
   userName === coachName ? "Hello " + "Coach" + "!" : "Hello " + userName + "!";
+
+console.log(greeting); */
+
+// Second try
+
+const name = "coachMerle";
+
+const greeting = "Hello" + (name === "coachMerle" ? " Coach" : name) + "!";
 
 console.log(greeting);
