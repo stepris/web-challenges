@@ -110,7 +110,7 @@ h1 {
 
 @media screen and (prefers-color-scheme: dark) {
   .box--four {
-    background-color: beige;
+    background-color: blue;
   }
 }
 
