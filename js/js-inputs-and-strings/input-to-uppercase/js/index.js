@@ -18,15 +18,17 @@ let buttonUppercase = document.querySelector('[data-js="button-uppercase"]');
 console.log(buttonUppercase);
 
 buttonUppercase.addEventListener("click", function () {
-  const welcomeMsg = "Hallo Tom von unserer Variable";
+  // const welcomeMsg = "Hallo Tom von unserer Variable";
 
-  let variableA = "Test 1";
-  let variableB = variableA;
+  // let variableA = "Test 1";
+  // let variableB = variableA;
 
-  variableA = "Test 2";
-  console.log(variableB);
+  // variableA = "Test 2";
+  // console.log(variableB);
 
   // variableB = "Test neuer Wert";
 
-  firstInput.value = welcomeMsg;
+  // firstInput.value = welcomeMsg;
+
+  firstInput.value = firstInput.value.buttonUppercase();
 });
