@@ -83,7 +83,7 @@ console.log(mothersNameOfSecondPerson);
 
 // const animaltypeOfLisasPet = "change me";
 
-const animaltypeOfLisasPet = people[3].pet.name;
+const animaltypeOfLisasPet = people[3].pet.animal;
 
 console.log(animaltypeOfLisasPet);
 
