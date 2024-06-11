@@ -12,11 +12,10 @@ form.addEventListener("submit", (event) => {
   console.log(data.age);
   console.log(data.badness);
 
-  const badnessAgeFactor = parseInt(data.age) + parseInt(data.badness);
+  // const ageBadnessSum = parseInt(data.age) + parseInt(data.badness);
+  const ageBadnessSum = Number(data.age) + Number(data.badness);
 
-  console.log(
-    `The age-badness-sum of ${data.firstName} is ${badnessAgeFactor}.`
-  );
+  console.log(`The age-badness-sum of ${data.firstName} is ${ageBadnessSum}.`);
 
   event.target.reset();
   event.target.elements.firstName.focus();
