@@ -4,6 +4,10 @@ const actionsElement = document.querySelector("[data-js='actions']");
 const userElement = document.querySelector("[data-js='user']");
 const errorElement = document.querySelector("[data-js='error']");
 
+console.log("Actions Element:", actionsElement);
+console.log("User Element:", userElement);
+console.log("Error Element:", errorElement);
+
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
