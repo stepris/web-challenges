@@ -5,26 +5,44 @@ export default function App() {
   function handleClick() {
     console.log("You clicked me!");
   }
+
   return (
-    <Button
-      color="blue"
-      text="Blue button"
-      handleClick={handleClick}
-      isEnabled
-    />
+    <>
+      <Button
+        color="blue"
+        text="Blue button"
+        handleClick={handleClick}
+        isDisabled
+      />
+
+      <Button
+        color="green"
+        text="Green button"
+        handleClick={handleClick}
+        // isDisabled
+      />
+
+      <Button
+        color="red"
+        text="Red button"
+        handleClick={handleClick}
+        // isDisabled
+      />
+    </>
   );
 }
 
-function Button({ color, text, handleClick, isEnabled }) {
-  if (!isEnabled) {
-    return null;
-  }
+function Button({ color, text, handleClick, isDisabled }) {
+  // if (isDisabled) {
+  //   return null;
+  // }
   // console.log({ handleClick });
 
   return (
     <button
       style={{ backgroundColor: color, height: "50px", color: "white" }}
       onClick={handleClick}
+      disabled={isDisabled}
     >
       {text}
     </button>
