@@ -6,29 +6,35 @@ export default function App() {
     console.log("You clicked me!");
   }
 
-  return (
-    <>
-      <Button
-        color="blue"
-        text="Blue button"
-        handleClick={handleClick}
-        isDisabled
-      />
+  const divStyle = {
+    display: "flex",
+    width: "400px",
+    gap: 20,
+    justifyContent: "center",
+  };
 
+  return (
+    <div style={divStyle}>
       <Button
         color="green"
-        text="Green button"
+        text="Submit"
         handleClick={handleClick}
         // isDisabled
       />
 
       <Button
         color="red"
-        text="Red button"
+        text="Danger"
         handleClick={handleClick}
         // isDisabled
       />
-    </>
+      <Button
+        color="blue"
+        text="Disabled"
+        handleClick={handleClick}
+        isDisabled
+      />
+    </div>
   );
 }
 
@@ -38,12 +44,14 @@ function Button({ color, text, handleClick, isDisabled }) {
   // }
   // console.log({ handleClick });
 
+  const style = {
+    backgroundColor: color,
+    height: "50px",
+    color: "white",
+  };
+
   return (
-    <button
-      style={{ backgroundColor: color, height: "50px", color: "white" }}
-      onClick={handleClick}
-      disabled={isDisabled}
-    >
+    <button style={style} onClick={handleClick} disabled={isDisabled}>
       {text}
     </button>
   );
