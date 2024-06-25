@@ -1,0 +1,35 @@
+.card {
+  width: 70%;
+  padding: 20px;
+  margin-inline: auto;
+  margin-block: 20px;
+  background-color: var(--color-water);
+}
+
+.card--red {
+  background-color: lightcoral;
+}
+
+.card--yellow {
+  background-color: lightyellow;
+}
+
+.card--purple {
+  background-color: palevioletred;
+}
+
+.card--orange {
+  background-color: orange;
+}
+
+.card--green {
+  background-color: lightgreen;
+}
+
+.card--blue {
+  background-color: blue;
+}
+
+.card--brown {
+  background-color: brown;
+}
