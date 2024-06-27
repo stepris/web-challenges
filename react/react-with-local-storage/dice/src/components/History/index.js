@@ -5,6 +5,7 @@ import { useEffect } from "react";
 const MAX_ROLLS = 5;
 
 export default function History({ rolls }) {
+  // Logging the li items to the console
   useEffect(() => {
     const entries = document.querySelectorAll(".history__entry");
     entries.forEach((element) => {
@@ -29,7 +30,6 @@ export default function History({ rolls }) {
             })}
             ] <strong>{value}</strong>
           </li>
-          // {console.log(get)
           // {console.log(document.querySelectorAll(".history__entry"))}
         ))}
       </ul>

@@ -90,3 +90,12 @@ function App() {
 }
 
 export default App;
+
+/* React with Local Storage: Journal App with Local Storage
+
+Make your journal entries persistent by saving them to local storage.
+
+Task
+Install the use-local-storage-state package and use it to make the journal entries persistent.
+
+💡 Does it make sense to also put the filter state into local storage? What are the differences to the user experience? */
