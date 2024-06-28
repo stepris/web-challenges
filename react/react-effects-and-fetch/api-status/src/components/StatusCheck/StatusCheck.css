@@ -14,6 +14,15 @@
   padding: 0.5rem;
 }
 
+.status-check__button:hover {
+  cursor: pointer;
+}
+
+.status-check__button:active {
+  transform: scale(0.95);
+  background-color: var(--color-nemo-dark);
+}
+
 .status-check__heading {
   margin: 0;
 }
