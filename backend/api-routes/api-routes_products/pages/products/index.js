@@ -1,10 +1,8 @@
 import useSWR from "swr";
 import styled from "styled-components";
 
-const fetcher = (...args) => fetch(...args).then((response) => response.json());
-
 export default function Products() {
-  const { data: products, error, isLoading } = useSWR("/api/products", fetcher);
+  const { data: products, error, isLoading } = useSWR("/api/products");
 
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;

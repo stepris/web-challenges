@@ -2,26 +2,41 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 import styled from "styled-components";
 
-const fetcher = (...args) => fetch(...args).then((response) => response.json());
-
 export default function Handle() {
-  const { data: products, error, isLoading } = useSWR("/api/products", fetcher);
-
   const router = useRouter();
 
   const { id } = router.query;
 
-  const productToDisplay = products.map((product) => product.id === id);
-
-  console.log(productToDisplay);
   const {
-    id: productId,
-    category,
-    description,
-    name,
-    price,
-    currency,
-  } = productToDisplay;
+    data: product,
+    error,
+    isLoading,
+  } = useSWR(id ? `/api/products/${id}` : null);
+
+  if (!id) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (error) {
+    return <h1>An error occured</h1>;
+  }
+
+  if (!product) {
+    return;
+  }
+
+  const {
+    id: productId = "product id",
+    category = "category",
+    description = "description",
+    name = "name",
+    price = "price",
+    currency = "euro",
+  } = product;
 
   return (
     <ProductItem key={productId}>
@@ -36,6 +51,7 @@ export default function Handle() {
 }
 
 const ProductItem = styled.li`
+  list-style: none;
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
